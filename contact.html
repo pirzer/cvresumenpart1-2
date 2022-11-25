@@ -16,11 +16,13 @@
             emailjs.init("BaSOXwetkVx5elXRW");
             emailjs.send("service_907mv6g", "rosie", {
                 name: "Aaron",
-                notes: "The project that I want is..."
+                notes: "The project that I want is..." 
             })
         })();
     </script>
 </head>
+ <!-- Line 17 to 20 send emails automatically from https://dashboard.emailjs.com/admin  .   It was caused by that automatic call of the emailjs.send() method up there in the HTML-->
+<!-- removing line 17 to line20 solved the event of sending emails -->
 
 <body>
     <header class="container-fluid">
